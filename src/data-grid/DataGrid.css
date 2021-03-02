@@ -1,0 +1,48 @@
+.data-grid {
+    max-width: 60%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.data-grid label input:focus {
+    outline: 0;
+}
+
+.data-grid label:focus-within {
+    background: #fbfcfe;
+    border-color: #1a5edb;
+}
+
+.data-grid label {
+    font-size: 13px;
+    color: rgba(0,0,0,.54);
+    flex: 1;
+    max-width: 160px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px 12px 2px;
+    margin-bottom: 0;
+}
+
+.data-grid label span {
+    display: block;
+    margin: 0;
+}
+
+.data-grid label input {
+    border: none;
+    background: 0 0;
+    font-weight: 400;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

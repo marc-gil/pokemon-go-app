@@ -1,0 +1,15 @@
+.stat {
+    max-width: 80%;
+    margin: 0 auto 16px;
+}
+
+.stat h4 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 0 0 3px;
+    font-size: 17px;
+}
+.stat h4 span {
+    color: #ccc;
+}

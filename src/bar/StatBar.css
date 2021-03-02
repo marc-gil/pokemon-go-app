@@ -1,0 +1,39 @@
+.stat-bar {
+    display: flex;
+    background: rgba(0,0,0,.08);
+    border-radius: 9px
+}
+
+.stat-bar .bar {
+    height: 18px;
+    flex: 1 1 40px;
+    border-right: 1px solid rgba(255,255,255,.3);
+    cursor: pointer
+}
+
+.stat-bar .bar.hover {
+    background: #f5bf78
+}
+
+.stat-bar .bar.active {
+    background: #ee9219
+}
+
+.stat-bar .bar.end {
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px
+}
+
+.stat-bar .bar:nth-child(5n+1) {
+    border-left: 4px solid #fff
+}
+
+.stat-bar .bar:first-child {
+    border-left: none;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px
+}
+
+.stat-bar.max .bar.active {
+    background: #e18079
+}
