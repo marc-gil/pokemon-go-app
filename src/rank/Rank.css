@@ -1,0 +1,14 @@
+
+img {
+    width: 128px;
+}
+
+.rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture {
+    margin-right: 10px;
+}

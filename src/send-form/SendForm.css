@@ -1,0 +1,26 @@
+
+.submit {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.submit button {
+    flex-grow: 0;
+    display: inline-block;
+    background: #43a047;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 28px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    min-height: 37px;
+}
+
+.submit button.reset {
+    background-color: #eee;
+    color: #666;
+    margin-right: 12px;
+}
