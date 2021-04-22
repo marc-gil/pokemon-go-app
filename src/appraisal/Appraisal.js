@@ -4,9 +4,9 @@ import './Appraisal.css';
 function Appraisal(props) {
     return (
         <div className="appraisal">
-            <Stat id="attack" name="Ataque" value={props.attack}/>
-            <Stat id="defense" name="Defensa" value={props.defense}/>
-            <Stat id="health" name="PS" value={props.health}/>
+            <Stat id="attack" name="Ataque" value={props.attack} onChange={props.onChangeAttack}/>
+            <Stat id="defense" name="Defensa" value={props.defense} onChange={props.onChangeDefense}/>
+            <Stat id="health" name="PS" value={props.health} onChange={props.onChangeHealth}/>
         </div>
     )
 }

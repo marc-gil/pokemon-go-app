@@ -13,21 +13,21 @@ function Table(props) {
                 </tr>
                 <tr>
                     <th>Rank</th>
-                    <td>{props.greatRank}</td>
-                    <td>{props.ultraRank}</td>
-                    <td>{props.masterRank}</td>
+                    <td className={props.greatLeagueLevelCap ? "red" : ""}>{props.greatRank}</td>
+                    <td className={props.ultraLeagueLevelCap ? "red" : ""}>{props.ultraRank}</td>
+                    <td className={props.masterLeagueLevelCap ? "red" : ""}>{props.masterRank}</td>
                 </tr>
                 <tr>
                     <th>Level</th>
-                    <td>{props.greatLevel}</td>
-                    <td>{props.ultraLevel}</td>
-                    <td>{props.masterLevel}</td>
+                    <td className={props.greatLeagueLevelCap ? "red" : ""}>{props.greatLevel}</td>
+                    <td className={props.ultraLeagueLevelCap ? "red" : ""}>{props.ultraLevel}</td>
+                    <td className={props.masterLeagueLevelCap ? "red" : ""}>{props.masterLevel}</td>
                 </tr>
                 <tr>
                     <th>CP</th>
-                    <td>{props.greatCp}</td>
-                    <td>{props.ultraCp}</td>
-                    <td>{props.masterCp}</td>
+                    <td className={props.greatLeagueLevelCap ? "red" : ""}>{props.greatCp}</td>
+                    <td className={props.ultraLeagueLevelCap ? "red" : ""}>{props.ultraCp}</td>
+                    <td className={props.masterLeagueLevelCap ? "red" : ""}>{props.masterCp}</td>
                 </tr>
             </tbody>
         </table>

@@ -2,9 +2,9 @@ import Table from "../table/Table";
 import "./Rank.css";
 
 function Rank(props) {
-    const {rank: greatRank, level: greatLevel, cp: greatCp} = props.greatLeague;
-    const {rank: ultraRank, level: ultraLevel, cp: ultraCp} = props.ultraLeague;
-    const {rank: masterRank, level: masterLevel, cp: masterCp} = props.masterLeague;
+    const {rank: greatRank, level: greatLevel, cp: greatCp, isLevelCapReached: greatLeagueLevelCap} = props.greatLeague;
+    const {rank: ultraRank, level: ultraLevel, cp: ultraCp, isLevelCapReached: ultraLeagueLevelCap} = props.ultraLeague;
+    const {rank: masterRank, level: masterLevel, cp: masterCp, isLevelCapReached: masterLeagueLevelCap} = props.masterLeague;
     console.log(greatRank);
     return (
         <div className="rank">
@@ -17,7 +17,11 @@ function Rank(props) {
                    masterLevel={masterLevel}
                    greatCp={greatCp}
                    ultraCp={ultraCp}
-                   masterCp={masterCp}/>
+                   masterCp={masterCp}
+                   greatLeagueLevelCap={greatLeagueLevelCap}
+                   ultraLeagueLevelCap={ultraLeagueLevelCap}
+                   masterLeagueLevelCap={masterLeagueLevelCap}
+                   />
         </div>
     )
 }

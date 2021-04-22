@@ -6,7 +6,7 @@ import './Dropdown.css';
 
 function Dropdown(props) {
   const [isListOpen, setIsListOpen] = useState(props.isListOpen);
-  const [title, setTitle] = useState(props.title);
+  const [selectedValue, setSelectedValue] = useState("");
   const [keyword, setKeyword] = useState('');
   const [selectedItem, setSelectedItem] = useState(props.selectedItem);
   const list = props.list;
@@ -15,7 +15,8 @@ function Dropdown(props) {
     setKeyword('');
     setIsListOpen(!isListOpen);
     
-    if (isListOpen) {  
+    if (isListOpen) {
+      debugger;
       setKeyword('');
     }
   }
@@ -48,14 +49,8 @@ function Dropdown(props) {
   }
 
   const selectItem = (item) => {
-    const { label, value } = item;
-    let foundItem;
-
-    if ( !label ) {
-      foundItem = list.find( (i) => i.value === item.value );
-    }
-
-    setTitle(label || foundItem.label);
+    const { label } = item;
+    setSelectedValue(label);
     setIsListOpen(false);
     setSelectedItem(item);
     props.onSelectItem(item);
@@ -99,9 +94,14 @@ function Dropdown(props) {
       <button type="button" 
               className={"dd-header"} 
               onClick={() => toggleList()}>
-        <div className={"dd-header-title"}>
-          {title}
-        </div>
+        <input 
+          className={"dd-header-title"} 
+          ref={props.searchField}
+          placeholder={props.placeHolder}
+          onChange={(e) => filterList(e)}
+          value={selectedValue}
+          required={props.required}
+        />
         <span>
           {isListOpen ? <ArrowUp/> : <ArrowDown/>}
         </span>
@@ -113,7 +113,8 @@ function Dropdown(props) {
             className="dd-list-search-bar"
             placeholder={props.placeHolder}
             onClick={(e) => e.stopPropagation()}
-            onChange={(e) => filterList(e)}/>
+            onChange={(e) => filterList(e)}
+            autoFocus={true}/>
 
           <div className={"dd-scroll-list"}>
             {listItems()}
