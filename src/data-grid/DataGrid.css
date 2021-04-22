@@ -3,6 +3,7 @@
     margin: 0 auto 20px;
     display: flex;
     justify-content: center;
+    margin-top: 35px;
 }
 
 .data-grid label input:focus {
