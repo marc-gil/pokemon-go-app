@@ -47,9 +47,8 @@ function App() {
     const evolutionChain = selectedSpecie.evolution_chain;
     const {step, path} = evolutionChain.evolutions.find( item => item.pokedexNumber === selectedSpecie.pokedexNumber );
     const evolutionsToCalculate = evolutionChain.evolutions.filter( (evolution) => evolution.step >= step && (path === 0 ? evolution.path >= 0 : evolution.path === path ) )
-                                                           .sort( (e1, e2) => e1.step - e2.step )                                                       
-                                                           .map( (item) => item.pokedexNumber );
-    debugger;                                                  
+                                                           .sort( (ev1, ev2) => ev1.step - ev2.step )                                                       
+                                                           .map( (item) => item.pokedexNumber );                                                  
     const ranksToShow = [];
     let level = null;
     if ( cp != null ) {
@@ -59,7 +58,6 @@ function App() {
         level = data.level;
       }
     }
-    debugger;
     for (const pokedexNumber of evolutionsToCalculate) {
       const response = await fetch('https://pkmn-go-api.herokuapp.com/api/pokemon-species/' + pokedexNumber + '/rank?' + 
           (cp != null ? ('level=' + level) : '') + '&attackIv=' + attackIv + '&defenseIv=' + defenseIv + '&healthIv=' + healthIv + '&levelCap=50');
@@ -80,7 +78,7 @@ function App() {
       }
     }
     setRanks(ranksToShow);
-    setCalculatedSpecies(pokemonSpecies.filter( (item) => evolutionsToCalculate.includes(item.pokedexNumber) ) ); 
+    setCalculatedSpecies(evolutionsToCalculate.map( (pokedexNumber) => pokemonSpecies.find( (item) => item.pokedexNumber === pokedexNumber) )); 
   }
 
   return (
@@ -109,7 +107,6 @@ function App() {
         <SendForm onSubmit={updateCalculatedSpecies}/>
       </form>
       {calculatedSpecies.map( (item, index) => {
-        debugger;
         return <Rank image={item !== null ? item.image : ""}
             key={item.pokedexNumber}
             greatLeague={ index < ranks.length ? ranks[index].greatLeague : ranks[0].greatLeague }
