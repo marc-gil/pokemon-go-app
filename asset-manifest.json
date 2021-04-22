@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/pokemon-go-app/static/css/main.72e1e4e3.chunk.css",
-    "main.js": "/pokemon-go-app/static/js/main.f05c2275.chunk.js",
-    "main.js.map": "/pokemon-go-app/static/js/main.f05c2275.chunk.js.map",
-    "runtime-main.js": "/pokemon-go-app/static/js/runtime-main.55a7b0f6.js",
-    "runtime-main.js.map": "/pokemon-go-app/static/js/runtime-main.55a7b0f6.js.map",
-    "static/js/2.e864f485.chunk.js": "/pokemon-go-app/static/js/2.e864f485.chunk.js",
-    "static/js/2.e864f485.chunk.js.map": "/pokemon-go-app/static/js/2.e864f485.chunk.js.map",
-    "static/js/3.6de6a08e.chunk.js": "/pokemon-go-app/static/js/3.6de6a08e.chunk.js",
-    "static/js/3.6de6a08e.chunk.js.map": "/pokemon-go-app/static/js/3.6de6a08e.chunk.js.map",
+    "main.css": "/pokemon-go-app/static/css/main.2c781b6f.chunk.css",
+    "main.js": "/pokemon-go-app/static/js/main.1dd720a0.chunk.js",
+    "main.js.map": "/pokemon-go-app/static/js/main.1dd720a0.chunk.js.map",
+    "runtime-main.js": "/pokemon-go-app/static/js/runtime-main.ecdc4841.js",
+    "runtime-main.js.map": "/pokemon-go-app/static/js/runtime-main.ecdc4841.js.map",
+    "static/js/2.2118f2b5.chunk.js": "/pokemon-go-app/static/js/2.2118f2b5.chunk.js",
+    "static/js/2.2118f2b5.chunk.js.map": "/pokemon-go-app/static/js/2.2118f2b5.chunk.js.map",
+    "static/js/3.7608d3cb.chunk.js": "/pokemon-go-app/static/js/3.7608d3cb.chunk.js",
+    "static/js/3.7608d3cb.chunk.js.map": "/pokemon-go-app/static/js/3.7608d3cb.chunk.js.map",
     "index.html": "/pokemon-go-app/index.html",
-    "static/css/main.72e1e4e3.chunk.css.map": "/pokemon-go-app/static/css/main.72e1e4e3.chunk.css.map",
-    "static/js/2.e864f485.chunk.js.LICENSE.txt": "/pokemon-go-app/static/js/2.e864f485.chunk.js.LICENSE.txt",
+    "static/css/main.2c781b6f.chunk.css.map": "/pokemon-go-app/static/css/main.2c781b6f.chunk.css.map",
+    "static/js/2.2118f2b5.chunk.js.LICENSE.txt": "/pokemon-go-app/static/js/2.2118f2b5.chunk.js.LICENSE.txt",
     "static/media/arrowDown.5dc7aa7a.svg": "/pokemon-go-app/static/media/arrowDown.5dc7aa7a.svg",
     "static/media/arrowUp.fcf58142.svg": "/pokemon-go-app/static/media/arrowUp.fcf58142.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.55a7b0f6.js",
-    "static/js/2.e864f485.chunk.js",
-    "static/css/main.72e1e4e3.chunk.css",
-    "static/js/main.f05c2275.chunk.js"
+    "static/js/runtime-main.ecdc4841.js",
+    "static/js/2.2118f2b5.chunk.js",
+    "static/css/main.2c781b6f.chunk.css",
+    "static/js/main.1dd720a0.chunk.js"
   ]
 }
