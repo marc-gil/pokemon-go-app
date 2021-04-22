@@ -47,7 +47,9 @@ function App() {
     const evolutionChain = selectedSpecie.evolution_chain;
     const {step, path} = evolutionChain.evolutions.find( item => item.pokedexNumber === selectedSpecie.pokedexNumber );
     const evolutionsToCalculate = evolutionChain.evolutions.filter( (evolution) => evolution.step >= step && (path === 0 ? evolution.path >= 0 : evolution.path === path ) )
+                                                           .sort( (e1, e2) => e1.step - e2.step )                                                       
                                                            .map( (item) => item.pokedexNumber );
+    debugger;                                                  
     const ranksToShow = [];
     let level = null;
     if ( cp != null ) {
