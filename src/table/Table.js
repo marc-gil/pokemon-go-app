@@ -13,21 +13,21 @@ function Table(props) {
                 </tr>
                 <tr>
                     <th>Rank</th>
-                    <td className={props.greatLeagueLevelCap ? "red" : ""}>{props.greatRank}</td>
-                    <td className={props.ultraLeagueLevelCap ? "red" : ""}>{props.ultraRank}</td>
-                    <td className={props.masterLeagueLevelCap ? "red" : ""}>{props.masterRank}</td>
+                    <td className={props.greatLeagueCpCap ? "red" : ""}>{props.greatRank}</td>
+                    <td className={props.ultraLeagueCpCap ? "red" : ""}>{props.ultraRank}</td>
+                    <td className={props.masterLeagueCpCap ? "red" : ""}>{props.masterRank}</td>
                 </tr>
                 <tr>
                     <th>Level</th>
-                    <td className={props.greatLeagueLevelCap ? "red" : ""}>{props.greatLevel}</td>
-                    <td className={props.ultraLeagueLevelCap ? "red" : ""}>{props.ultraLevel}</td>
-                    <td className={props.masterLeagueLevelCap ? "red" : ""}>{props.masterLevel}</td>
+                    <td className={props.greatLeagueCpCap ? "red" : ""}>{props.greatLevel}</td>
+                    <td className={props.ultraLeagueCpCap ? "red" : ""}>{props.ultraLevel}</td>
+                    <td className={props.masterLeagueCpCap ? "red" : ""}>{props.masterLevel}</td>
                 </tr>
                 <tr>
                     <th>CP</th>
-                    <td className={props.greatLeagueLevelCap ? "red" : ""}>{props.greatCp}</td>
-                    <td className={props.ultraLeagueLevelCap ? "red" : ""}>{props.ultraCp}</td>
-                    <td className={props.masterLeagueLevelCap ? "red" : ""}>{props.masterCp}</td>
+                    <td className={props.greatLeagueCpCap ? "red" : ""}>{props.greatCp}</td>
+                    <td className={props.ultraLeagueCpCap ? "red" : ""}>{props.ultraCp}</td>
+                    <td className={props.masterLeagueCpCap ? "red" : ""}>{props.masterCp}</td>
                 </tr>
             </tbody>
         </table>
